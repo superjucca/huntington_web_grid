@@ -41,6 +41,18 @@ img, video, audio, embed, object {
 	margin-right:30px;
 	margin-right:3rem;
 }
+.pcol1, .pcol1-1,
+.pcol2, .pcol2-1, .pcol2-2,
+.pcol3, .pcol3-1, .pcol3-2, .pcol3-3,
+.pcol4, .pcol4-1, .pcol4-2, .pcol4-3, .pcol4-4,
+.pcol6, .pcol6-1, .pcol6-2, .pcol6-3, .pcol6-4, .pcol6-5, .pcol6-6,
+.pcol8, .pcol8-1, .pcol8-2, .pcol8-3, .pcol8-4, .pcol8-5, .pcol8-6, .pcol8-7, .pcol8-8,
+.pcol12, .pcol12-1, .pcol12-2, .pcol12-3, .pcol12-4, .pcol12-5, .pcol12-6, .pcol12-7, .pcol12-8, .pcol12-9, .pcol12-10, .pcol12-11, .pcol12-12,
+.pcol24, .pcol24-1, .pcol24-2, .pcol24-3, .pcol24-4, .pcol24-5, .pcol24-6, .pcol24-7, .pcol24-8, .pcol24-9, .pcol24-10, .pcol24-11, .pcol24-12, .pcol24-13, .pcol24-14, .pcol24-15, .pcol24-16, .pcol24-17, .pcol24-18, .pcol24-19, .pcol24-20, .pcol24-21, .pcol24-22, .pcol24-23, .pcol24-24 {
+	margin-right:0;
+	padding-right:30px;
+	padding-right:3rem;
+}
 .col1, .col1-1, .col2-2, .col3-3, .col4-4, .col6-6, .col8-8, .col12-12, .col24-24 {
 	width:1410px;
 	width:141rem;
@@ -344,6 +356,18 @@ img, video, audio, embed, object {
 		margin-right:20px;
 		margin-right:2rem;
 	}
+	.pcol1, .pcol1-1,
+	.pcol2, .pcol2-1, .pcol2-2,
+	.pcol3, .pcol3-1, .pcol3-2, .pcol3-3,
+	.pcol4, .pcol4-1, .pcol4-2, .pcol4-3, .pcol4-4,
+	.pcol6, .pcol6-1, .pcol6-2, .pcol6-3, .pcol6-4, .pcol6-5, .pcol6-6,
+	.pcol8, .pcol8-1, .pcol8-2, .pcol8-3, .pcol8-4, .pcol8-5, .pcol8-6, .pcol8-7, .pcol8-8,
+	.pcol12, .pcol12-1, .pcol12-2, .pcol12-3, .pcol12-4, .pcol12-5, .pcol12-6, .pcol12-7, .pcol12-8, .pcol12-9, .pcol12-10, .pcol12-11, .pcol12-12,
+	.pcol24, .pcol24-1, .pcol24-2, .pcol24-3, .pcol24-4, .pcol24-5, .pcol24-6, .pcol24-7, .pcol24-8, .pcol24-9, .pcol24-10, .pcol24-11, .pcol24-12, .pcol24-13, .pcol24-14, .pcol24-15, .pcol24-16, .pcol24-17, .pcol24-18, .pcol24-19, .pcol24-20, .pcol24-21, .pcol24-22, .pcol24-23, .pcol24-24 {
+		margin-right:0;
+		padding-right:20px;
+		padding-right:2rem;
+	}
 	.col1, .col1-1, .col2-2, .col3-3, .col4-4, .col6-6, .col8-8, .col12-12, .col24-24 {
 		width:940px;
 		width:94rem;
@@ -645,6 +669,18 @@ img, video, audio, embed, object {
 	.col24, .col24-1, .col24-2, .col24-3, .col24-4, .col24-5, .col24-6, .col24-7, .col24-8, .col24-9, .col24-10, .col24-11, .col24-12, .col24-13, .col24-14, .col24-15, .col24-16, .col24-17, .col24-18, .col24-19, .col24-20, .col24-21, .col24-22, .col24-23, .col24-24 {
 		margin-right:15px;
 		margin-right:1.5rem;
+	}
+	.pcol1, .pcol1-1,
+	.pcol2, .pcol2-1, .pcol2-2,
+	.pcol3, .pcol3-1, .pcol3-2, .pcol3-3,
+	.pcol4, .pcol4-1, .pcol4-2, .pcol4-3, .pcol4-4,
+	.pcol6, .pcol6-1, .pcol6-2, .pcol6-3, .pcol6-4, .pcol6-5, .pcol6-6,
+	.pcol8, .pcol8-1, .pcol8-2, .pcol8-3, .pcol8-4, .pcol8-5, .pcol8-6, .pcol8-7, .pcol8-8,
+	.pcol12, .pcol12-1, .pcol12-2, .pcol12-3, .pcol12-4, .pcol12-5, .pcol12-6, .pcol12-7, .pcol12-8, .pcol12-9, .pcol12-10, .pcol12-11, .pcol12-12,
+	.pcol24, .pcol24-1, .pcol24-2, .pcol24-3, .pcol24-4, .pcol24-5, .pcol24-6, .pcol24-7, .pcol24-8, .pcol24-9, .pcol24-10, .pcol24-11, .pcol24-12, .pcol24-13, .pcol24-14, .pcol24-15, .pcol24-16, .pcol24-17, .pcol24-18, .pcol24-19, .pcol24-20, .pcol24-21, .pcol24-22, .pcol24-23, .pcol24-24 {
+		margin-right:0;
+		padding-right:15px;
+		padding-right:1.5rem;
 	}
 	.col1, .col1-1, .col2-2, .col3-3, .col4-4, .col6-6, .col8-8, .col12-12, .col24-24 {
 		width:705px;
@@ -948,6 +984,17 @@ img, video, audio, embed, object {
 	.col12, .col12-1, .col12-2, .col12-3, .col12-4, .col12-5, .col12-6, .col12-7, .col12-8, .col12-9, .col12-10, .col12-11, .col12-12,
 	.col24, .col24-1, .col24-2, .col24-3, .col24-4, .col24-5, .col24-6, .col24-7, .col24-8, .col24-9, .col24-10, .col24-11, .col24-12, .col24-13, .col24-14, .col24-15, .col24-16, .col24-17, .col24-18, .col24-19, .col24-20, .col24-21, .col24-22, .col24-23, .col24-24 {
 		margin-right:2%;
+	}
+	.pcol1, .pcol1-1,
+	.pcol2, .pcol2-1, .pcol2-2,
+	.pcol3, .pcol3-1, .pcol3-2, .pcol3-3,
+	.pcol4, .pcol4-1, .pcol4-2, .pcol4-3, .pcol4-4,
+	.pcol6, .pcol6-1, .pcol6-2, .pcol6-3, .pcol6-4, .pcol6-5, .pcol6-6,
+	.pcol8, .pcol8-1, .pcol8-2, .pcol8-3, .pcol8-4, .pcol8-5, .pcol8-6, .pcol8-7, .pcol8-8,
+	.pcol12, .pcol12-1, .pcol12-2, .pcol12-3, .pcol12-4, .pcol12-5, .pcol12-6, .pcol12-7, .pcol12-8, .pcol12-9, .pcol12-10, .pcol12-11, .pcol12-12,
+	.pcol24, .pcol24-1, .pcol24-2, .pcol24-3, .pcol24-4, .pcol24-5, .pcol24-6, .pcol24-7, .pcol24-8, .pcol24-9, .pcol24-10, .pcol24-11, .pcol24-12, .pcol24-13, .pcol24-14, .pcol24-15, .pcol24-16, .pcol24-17, .pcol24-18, .pcol24-19, .pcol24-20, .pcol24-21, .pcol24-22, .pcol24-23, .pcol24-24 {
+		margin-right:0;
+		padding-right:2%;
 	}
 	.col1, .col1-1, .col2-2, .col3-3, .col4-4, .col6-6, .col8-8, .col12-12, .col24-24 {
 		width:100%;
