@@ -1218,6 +1218,7 @@ img, video, audio, embed, object {
 		margin-bottom:0;
 	}
 	.stack {
-		width:98%;
+		width:100%;
+		box-sizing:border-box;
 	}
 }
