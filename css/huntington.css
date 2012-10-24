@@ -1217,4 +1217,7 @@ img, video, audio, embed, object {
 	.bottom {
 		margin-bottom:0;
 	}
+	.stack {
+		width:98%;
+	}
 }
