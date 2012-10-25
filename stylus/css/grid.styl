@@ -1,0 +1,123 @@
+global-reset()
+html
+    overflow-y scroll
+    font-family Arial, "Helvetica Neue", Helvetica, sans-serif
+img, video, audio, embed, object
+    max-width 100%
+
+total_cols = 24
+col_width = 30px
+gut_width = 30px
+total_width = total_cols * (col_width + gut_width) - gut_width
+center()
+    width total_width
+    margin auto
+    clearfix()
+col(n)
+    width (col_width * n) + (gut_width * n) - gut_width
+    margin-right gut_width
+    float left
+span(n)
+    width ( (total_width) / (total_cols / n) )
+    float left
+suf(n)
+    margin-right (col_width * n) + (gut_width * n) + gut_width
+pre(n)
+    margin-left (col_width * n) + (gut_width * n)
+last()
+    margin-right 0 !important
+.last
+    last()
+mb()
+    margin-bottom gut_width
+
+medium = total_width + (gut_width * 2)
+col_width_m = 20px
+gut_width_m = 20px
+total_width_m = total_cols * (col_width_m + gut_width_m) - gut_width_m
+center_m()
+    width total_width_m
+    margin auto
+    clearfix()
+col_m(n)
+    width (col_width_m * n) + (gut_width_m * n) - gut_width_m
+    margin-right gut_width_m
+    float left
+span_m(n)
+    width ( (total_width_m) / (total_cols / n) )
+    float left
+suf_m(n)
+    margin-right (col_width_m * n) + (gut_width_m * n) + gut_width_m
+pre_m(n)
+    margin-left (col_width_m * n) + (gut_width_m * n)
+mb_m()
+    margin-bottom gut_width_m
+
+small = total_width_m + (gut_width_m * 2)
+col_width_s = 15px
+gut_width_s = 15px
+total_width_s = total_cols * (col_width_s + gut_width_s) - gut_width_s
+center_s()
+    width total_width_s
+    margin auto
+    clearfix()
+col_s(n)
+    width (col_width_s * n) + (gut_width_s * n) - gut_width_s
+    margin-right gut_width_s
+    float left
+span_s(n)
+    width ( (total_width_s) / (total_cols / n) )
+    float left
+suf_s(n)
+    margin-right (col_width_s * n) + (gut_width_s * n) + gut_width_s
+pre_s(n)
+    margin-left (col_width_s * n) + (gut_width_s * n)
+mb_s()
+    margin-bottom gut_width_s
+
+tiny = total_width_s + (gut_width_s * 2)
+col_width_t = 2%
+gut_width_t = 2%
+total_width_t = 96%
+center_t()
+    width total_width_t
+    margin auto
+    clearfix()
+col_t(n, f = false, c = false)
+    width (((100%) * n) / total_cols) - (gut_width_t / 2)
+    margin-right gut_width_t
+    float left
+    overflow hidden
+    if f
+        width floor( (((100%) * n) / total_cols) - (gut_width_t / 2) )
+    if c
+        width ceil( (((100%) * n) / total_cols) - (gut_width_t / 2) )
+span_t(n, f = false, c = false)
+    width ( (100%) / (total_cols / n) )
+    float left
+    if f
+        width floor( ((100%) / (total_cols / n)) )
+    if c
+        width ceil( ((100%) / (total_cols / n)) )
+suf_t(n, f = false, c = false)
+    margin-right ( (100%) / (total_cols / n) ) + gut_width_t
+    if f
+        margin-right floor( ( (100%) / (total_cols / n) ) + gut_width_t )
+    if c
+        margin-right ceil( ( (100%) / (total_cols / n) ) + gut_width_t )
+pre_t(n, f = false, c = false)
+    margin-left ( (100%) / (total_cols / n) )
+    if f
+        margin-left floor( ((100%) / (total_cols / n)) )
+    if c
+        margin-left ceil( ((100%) / (total_cols / n)) )
+mb_t()
+    margin-bottom gut_width_t
+stack(l = false, r = false)
+    width 100%
+    margin 0 0 2%
+    text-align center
+    if l
+        text-align left
+    if r
+        text-align right

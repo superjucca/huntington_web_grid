@@ -1,0 +1,101 @@
+@import 'nib'
+@import 'grid'
+@import 'buttons'
+
+header#primary
+    center()
+    mb()
+    div
+        clearfix()
+        margin 15px 0
+        #logo
+            col(4)
+            suf(16)
+        address
+            col(4)
+            last()
+            margin-top 30px
+            text-align right
+    nav
+        clearfix()
+        a
+            pill-button()
+            text-align center
+            font-size 13px
+            padding 0
+            col(6)
+            h = 40px
+            height h
+            line-height h
+            box-sizing(border-box)
+            *behavior url(js/boxsizing.htc)
+section
+    center()
+    article
+        col(16)
+    .last
+        col(8)
+
+unquote("@media (max-width: " + medium + "), (max-device-width: " + medium + ") {")
+header#primary
+    center_m()
+    mb_m()
+    div
+        #logo
+            col_m(6)
+            suf_m(14)
+        address
+            col_m(4)
+    nav
+        a
+            col_m(6)
+section
+    center_m()
+    article
+        col_m(16)
+    .last
+        col_m(8)
+unquote("}")
+
+
+unquote("@media (max-width: " + small + "), (max-device-width: " + small + ") {")
+header#primary
+    center_s()
+    mb_s()
+    div
+        #logo
+            col_s(8)
+            suf_s(12)
+        address
+            col_s(4)
+    nav
+        a
+            col_s(6)
+section
+    center_s()
+    article
+        col_s(16)
+    .last
+        col_s(8)
+unquote("}")
+
+
+unquote("@media (max-width: " + tiny + "), (max-device-width: " + tiny + ") {")
+header#primary
+    center_t()
+    mb_t()
+    div
+        #logo
+            stack()
+        address
+            stack()
+    nav
+        a
+            stack()
+section
+    center_t()
+    article
+        stack(true)
+    .last
+        stack(true)
+unquote("}")
