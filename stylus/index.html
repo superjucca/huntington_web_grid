@@ -13,7 +13,7 @@
         
         <header id="primary">
             <div>
-                <a href="/" id="logo"><img src="logo.gif"></a>
+                <a href="/" id="logo"><img src="http://cambelt.co/200x120/Logo?color=234653,eeeeee"></a>
                 <address>
                     123 Main St.<br>
                     New York, NY 12345
@@ -27,7 +27,7 @@
             </nav>
         </header>
         
-        <section>
+        <section id="typography">
             <article>
                 <header>Heading</header>
                 <p>
@@ -50,6 +50,175 @@
                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </article>
+        </section>
+        
+        <section id="code">
+            <pre>
+&lt;header id=&quot;primary&quot;&gt;
+    &lt;div&gt;
+        &lt;a href=&quot;/&quot; id=&quot;logo&quot;&gt;&lt;img src=&quot;http://cambelt.co/200x120/Logo?color=234653,eeeeee&quot;&gt;&lt;/a&gt;
+        &lt;address&gt;
+            123 Main St.&lt;br&gt;
+            New York, NY 12345
+        &lt;/address&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;a href=&quot;#&quot;&gt;Primary Link&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Primary Link&lt;/a&gt;
+        &lt;a href=&quot;#&quot;&gt;Primary Link&lt;/a&gt;
+        &lt;a class=&quot;last&quot; href=&quot;#&quot;&gt;Primary Link&lt;/a&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;section id=&quot;typography&quot;&gt;
+    &lt;article&gt;
+        &lt;header&gt;Heading&lt;/header&gt;
+        &lt;p&gt;
+            Lorem ipsum...
+        &lt;/p&gt;
+    &lt;/article&gt;
+    &lt;article class=&quot;last&quot;&gt;
+        &lt;header&gt;Heading&lt;/header&gt;
+        &lt;p&gt;
+            Lorem ipsum...
+        &lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+            </pre>
+            <pre class="last">
+@import 'nib'
+@import 'buttons'
+@import 'grid'
+@import 'typography'
+
+header#primary
+    mb()
+    padding 30px 0
+    background url(../img/header_bg.jpg) center no-repeat
+    div
+        center()
+        clearfix()
+        mb()
+        #logo
+            col(4)
+            suf(16)
+        address
+            col(4)
+            last()
+            margin-top 30px
+            color #fff
+            text-align right
+    nav
+        center()
+        clearfix()
+        a
+            minimal-button()
+            text-align center
+            font-size 13px
+            padding 0
+            col(6)
+            h = 40px
+            height h
+            line-height h
+            box-sizing(border-box)
+            *behavior url(js/boxsizing.htc)
+section
+    center()
+    typography()
+section#typography
+    mb()
+    article
+        col(16)
+    .last
+        col(8)
+
+unquote(&quot;@media (max-width: &quot; + medium + &quot;), (max-device-width: &quot; + medium + &quot;) {&quot;)
+header#primary
+    mb_m()
+    padding 15px 0
+    div
+        center_m()
+        clearfix_m()
+        mb_m()
+        #logo
+            col_m(4)
+            suf_m(16)
+        address
+            col_m(4)
+            margin-top 15px
+    nav
+        center_m()
+        clearfix_m()
+        a
+            col_m(6)
+section
+    center_m()
+section#typography
+    mb_m()
+    article
+        col_m(16)
+    .last
+        col_m(8)
+unquote(&quot;}&quot;)
+
+
+unquote(&quot;@media (max-width: &quot; + small + &quot;), (max-device-width: &quot; + small + &quot;) {&quot;)
+header#primary
+    mb_s()
+    padding 10px 0
+    div
+        center_s()
+        clearfix_s()
+        mb_s()
+        #logo
+            col_s(4)
+            suf_s(16)
+        address
+            col_s(4)
+            margin-top 10px
+    nav
+        center_s()
+        clearfix_s()
+        a
+            col_s(6)
+section
+    center_s()
+section#typography
+    mb_s()
+    article
+        col_s(16)
+    .last
+        col_s(8)
+unquote(&quot;}&quot;)
+
+
+unquote(&quot;@media (max-width: &quot; + tiny + &quot;), (max-device-width: &quot; + tiny + &quot;) {&quot;)
+header#primary
+    mb_t()
+    padding 2% 0
+    div
+        center_t()
+        clearfix_t()
+        mb_t()
+        #logo
+            stack()
+        address
+            stack()
+    nav
+        center_t()
+        clearfix_t()
+        a
+            col_t(6)
+section
+    center_t()
+section#typography
+    mb_t()
+    article
+        stack(true)
+    .last
+        stack(true)
+unquote(&quot;}&quot;)
+            </pre>
         </section>
         
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>

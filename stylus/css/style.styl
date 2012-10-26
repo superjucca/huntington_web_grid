@@ -1,13 +1,16 @@
 @import 'nib'
-@import 'grid'
 @import 'buttons'
+@import 'grid'
+@import 'typography'
 
 header#primary
-    center()
     mb()
+    padding 30px 0
+    background url(../img/header_bg.jpg) center no-repeat
     div
+        center()
         clearfix()
-        margin 15px 0
+        mb()
         #logo
             col(4)
             suf(16)
@@ -15,11 +18,13 @@ header#primary
             col(4)
             last()
             margin-top 30px
+            color #fff
             text-align right
     nav
+        center()
         clearfix()
         a
-            pill-button()
+            minimal-button()
             text-align center
             font-size 13px
             padding 0
@@ -31,71 +36,119 @@ header#primary
             *behavior url(js/boxsizing.htc)
 section
     center()
+    typography()
+section#typography
+    mb()
     article
         col(16)
     .last
         col(8)
+section#code
+    pre
+        col(12)
+        mb()
+        overflow-x hidden
+        font-size 12px
+        border 1px solid #ddd
+        border-radius 10px
+        padding 30px
+        box-sizing(border-box)
 
 unquote("@media (max-width: " + medium + "), (max-device-width: " + medium + ") {")
 header#primary
-    center_m()
     mb_m()
+    padding 15px 0
     div
+        center_m()
+        clearfix_m()
+        mb_m()
         #logo
-            col_m(6)
-            suf_m(14)
+            col_m(4)
+            suf_m(16)
         address
             col_m(4)
+            margin-top 15px
     nav
+        center_m()
+        clearfix_m()
         a
             col_m(6)
 section
     center_m()
+section#typography
+    mb_m()
     article
         col_m(16)
     .last
         col_m(8)
+section#code
+    pre
+        col_m(12)
+        mb_m()
 unquote("}")
 
 
 unquote("@media (max-width: " + small + "), (max-device-width: " + small + ") {")
 header#primary
-    center_s()
     mb_s()
+    padding 10px 0
     div
+        center_s()
+        clearfix_s()
+        mb_s()
         #logo
-            col_s(8)
-            suf_s(12)
+            col_s(4)
+            suf_s(16)
         address
             col_s(4)
+            margin-top 10px
     nav
+        center_s()
+        clearfix_s()
         a
             col_s(6)
 section
     center_s()
+section#typography
+    mb_s()
     article
         col_s(16)
     .last
         col_s(8)
+section#code
+    pre
+        col_s(12)
+        mb_s()
 unquote("}")
 
 
 unquote("@media (max-width: " + tiny + "), (max-device-width: " + tiny + ") {")
 header#primary
-    center_t()
     mb_t()
+    padding 2% 0
     div
+        center_t()
+        clearfix_t()
+        mb_t()
         #logo
             stack()
         address
             stack()
     nav
+        center_t()
+        clearfix_t()
         a
-            stack()
+            col_t(6)
 section
     center_t()
+section#typography
+    mb_t()
     article
         stack(true)
     .last
         stack(true)
+section#code
+    pre
+        stack(true)
+        mb_t()
 unquote("}")
