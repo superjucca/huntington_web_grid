@@ -136,14 +136,14 @@ col_t(n)
         width 95.75%
     if n is 24
         width 100%
-span_t(n, f = false, c = false)
+span_t(n, round)
     width ( (100%) / (total_cols / n) )
     margin 0
     float left
     overflow hidden
-    if f
+    if round == f
         width floor( ((100%) / (total_cols / n)) )
-    if c
+    if round == c
         width ceil( ((100%) / (total_cols / n)) )
 suf_t(n)
     // Stay in school kids!
@@ -247,11 +247,12 @@ pre_t(n)
         margin-left 100%
 mb_t()
     margin-bottom gut_width_t
-stack(l = false, r = false)
+stack(align)
     width 100%
     margin 0 0 2%
-    text-align center
-    if l
+    if align == l
         text-align left
-    if r
-        text-align right
+    else if align == c
+        text-align center
+    else if align == r
+        text-align right        
