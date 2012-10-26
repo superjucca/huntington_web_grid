@@ -1,9 +1,15 @@
-global-reset()
+*
+    margin 0
+    padding 0
 html
     overflow-y scroll
     font-family Arial, "Helvetica Neue", Helvetica, sans-serif
 img, video, audio, embed, object
     max-width 100%
+
+box-sizing()
+    vendor('box-sizing', arguments, only: webkit moz official)
+    *behavior url(js/boxsizing.htc)
 
 total_cols = 24
 col_width = 30px
@@ -18,8 +24,8 @@ col(n)
     margin-right gut_width
     float left
 span(n)
-    width ( (total_width) / (total_cols / n) )
     float left
+    width ( (total_width) / (total_cols / n) )
 suf(n)
     margin-right (col_width * n) + (gut_width * n) + gut_width
 pre(n)

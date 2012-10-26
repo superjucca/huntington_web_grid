@@ -1,8 +1,34 @@
-base = 100%
-
-typography()
-    font-family Arial, "Helvetica Neue", Helvetica, sans-serif
+typography(type = sans, base = 16px)
     font-size base
-    line-height 1.5
-    header
+    line-height lh = 1.5
+    h1
+        font-size base * 2.5
+        line-height base * 3
+    h2
+        font-size base * 2.25
+        line-height base * 3
+    h3
         font-size base * 2
+        line-height base * 3
+    h4
+        font-size base * 1.75
+        line-height base * 3
+    h5
+        font-size base * 1.5
+        line-height base * 3
+    h6
+        font-size base * 1.25
+        line-height base * 3
+    p
+        margin-bottom base * 1.5
+    if type == sans
+        font-family Arial, "Helvetica Neue", Helvetica, sans-serif
+    else if type == serif
+        font-family Georgia, Times, "Times New Roman", serif
+headings(font = sans)
+    if font == sans
+        h1, h2, h3, h4, h5, h6
+            font-family Arial, "Helvetica Neue", Helvetica, sans-serif
+    else if font == serif
+        h1, h2, h3, h4, h5, h6
+            font-family Georgia, Times, "Times New Roman", serif

@@ -34,17 +34,31 @@ header#primary
             height h
             line-height h
             box-sizing(border-box)
-            *behavior url(js/boxsizing.htc)
 section
     center()
-    typography()
+    typography(serif)
+    headings(sans)
 section#typography
     mb()
     article
         col(16)
+        figure
+            clearfix()
+            p
+                col(8)
+            blockquote
+                col(8)
+                last()
+                box-sizing(border-box)
+                typography(serif, 20px)
+                background #cfdff6
+                text-align center
+                padding 30px
+                border 2px dashed #fff
     .last
         col(8)
 section#code
+    typography()
     pre
         col(12)
         mb()
@@ -54,7 +68,7 @@ section#code
         border-radius 10px
         padding 30px
         box-sizing(border-box)
-        *behavior url(js/boxsizing.htc)
+        
 
 unquote("@media (max-width: " + medium + "), (max-device-width: " + medium + ") {")
 header#primary
@@ -81,6 +95,11 @@ section#typography
     mb_m()
     article
         col_m(16)
+        figure
+            p
+                col_m(8)
+            blockquote
+                col_m(8)
     .last
         col_m(8)
 section#code
@@ -115,6 +134,11 @@ section#typography
     mb_s()
     article
         col_s(16)
+        figure
+            p
+                col_s(8)
+            blockquote
+                col_s(8)
     .last
         col_s(8)
 section#code
@@ -140,13 +164,18 @@ header#primary
         center_t()
         clearfix_t()
         a
-            col_t(6)
+            stack()
 section
     center_t()
 section#typography
     mb_t()
     article
         stack(l)
+        figure
+            p
+                stack(l)
+            blockquote
+                stack()
     .last
         stack(l)
 section#code
